@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+		.columnFormat{
+			width: 5%;
+		}
+		td {
+			border: 3px solid black;
+		}
+	</style>
+</head>
+<body>
+<form action="part3A.php" method="post">
+	<table>
+	  <tbody>
+		<tr>
+		  <td>&nbsp;</td>
+		  <!--set values for each option-->
+		  <td class="columnFormat">No Opinion</td>
+		  <td class="columnFormat">Poor</td>
+		  <td class="columnFormat">Fair</td>
+		  <td class="columnFormat">Good</td>
+		  <td class="columnFormat">Excellent</td>
+		</tr>
+		
+		  <!--Friendly-->
+		<tr>
+		  <td> Friendliness of customer staff?</td>
+		  <td class="columnFormat">
+			  <input type="radio" name="friend" value="noop" id="friend0"></td>
+		  <td class="columnFormat">
+			  <input type="radio" name="friend" value="poor" id="friend1"></td>
+		  <td class="columnFormat">
+			  <input type="radio" name="friend" value="fair" id="friend2"></td>
+		  <td class="columnFormat">
+			  <input type="radio" name="friend" value="good" id="friend3"></td>
+		  <td class="columnFormat">
+			  <input type="radio" name="friend" value="exel" id="friend4"></td>
+		</tr>
+		
+		  <!--Space-->
+		<tr>
+		  <td>Space for luggage storage?</td>
+		  <td class="columnFormat">
+			  <input type="radio" name="Space" value="noop" id="space0"></td>
+		  <td class="columnFormat">
+			  <input type="radio" name="Space" value="poor" id="space1"></td>
+		  <td class="columnFormat">
+			  <input type="radio" name="Space" value="fair" id="space2"></td>
+		  <td class="columnFormat">
+			  <input type="radio" name="Space" value="good" id="space3"></td>
+		  <td class="columnFormat">
+			  <input type="radio" name="Space" value="exel" id="space4"></td>
+		</tr>
+		
+		  <!--Comfort-->
+			<tr>
+		  <td>Comfort of seating?</td>
+		  <td class="columnFormat">
+			  <input type="radio" name="Comfort" value="noop" id="Comfort0"></td>
+		  <td class="columnFormat">
+			  <input type="radio" name="Comfort" value="poor" id="Comfort1"></td>
+		  <td class="columnFormat">
+			  <input type="radio" name="Comfort" value="fair" id="Comfort2"></td>
+		  <td class="columnFormat">
+			  <input type="radio" name="Comfort" value="good" id="Comfort3"></td>
+		  <td class="columnFormat">
+			  <input type="radio" name="Comfort" value="exel" id="Comfort4"></td>
+		</tr>
+		
+		  <!--Clean-->
+			<tr>
+		  <td>Cleanliness of aircraft?</td>
+		  <td class="columnFormat">
+			  <input type="radio" name="Clean" value="noop" id="Clean0"></td>
+		  <td class="columnFormat">
+			  <input type="radio" name="Clean" value="poor" id="Clean1"></td>
+		  <td class="columnFormat">
+			  <input type="radio" name="Clean" value="fair" id="Clean2"></td>
+		  <td class="columnFormat">
+			  <input type="radio" name="Clean" value="good" id="Clean3"></td>
+		  <td class="columnFormat">
+			  <input type="radio" name="Clean" value="exel" id="Clean4"></td>
+		</tr>
+		
+		  <!--Noise-->
+			<tr>
+		  <td>Noise level of aircraft?</td>
+		  <td class="columnFormat">
+			  <input type="radio" name="Noise" value="noop" id="Noise0"></td>
+		  <td class="columnFormat">
+			  <input type="radio" name="Noise" value="poor" id="Noise1"></td>
+		  <td class="columnFormat">
+			  <input type="radio" name="Noise" value="fair" id="Noise2"></td>
+		  <td class="columnFormat">
+			  <input type="radio" name="Noise" value="good" id="Noise3"></td>
+		  <td class="columnFormat">
+			  <input type="radio" name="Noise" value="exel" id="Noise4"></td>
+		</tr>
+	  </tbody>
+	</table>
+	<div>
+	<br><br>
+	
+	  <!--Checkbox for plane departure-->
+	<table>
+	  <tbody>
+		<tr>
+		  <td colspan = "2">Did the plane depart on time</td>
+		</tr>
+		<tr>
+			<td>Yes</td>
+			<td><input type="checkbox" name="Yes"></td>
+		</tr>
+		<tr>
+			<td>No</td>
+			<td><input type="checkbox" name="No"></td>
+		</tr>
+		
+	  </tbody>
+	</table>
+	
+	  <!--Checkbox for plane landing-->
+	<table>
+	  <tbody>
+		<tr>
+		  <td colspan = "2">Did the plane land on time</td>
+		</tr>
+		<tr>
+			<td>Yes</td>
+			<td><input type="checkbox" name="Y2"></td>
+		</tr>
+		<tr>
+			<td>No</td>
+			<td><input type="checkbox" name="N2"></td>
+		</tr>
+		
+	  </tbody>
+	</table>
+	</div>	
+	<br><br>	
+	<input type="submit" name="submitReport" value="Send Review!">
+	<input type="submit" name="PastReport" value="View Past Survey Results!">
+</form>	
+</body>
+</html>
